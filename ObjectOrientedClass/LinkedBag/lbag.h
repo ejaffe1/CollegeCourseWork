@@ -1,8 +1,3 @@
-// Starter file for HW9 Q1 and Q2:
-// Define the new isSorted LBag member function and re-implement erase.
-
-// Ezra Jaffe
-
 #ifndef LBAG_H
 #define LBAG_H
 
@@ -38,7 +33,6 @@ private:
 
 // pre: out is an ostream and b is an LBag
 // post: the list associated with b has been inserted into out
-// recall friends can access private member vars and << is overloaded for node *
 template<typename T>
 std::ostream& operator <<(std::ostream& out, const LBag<T>& b) {
   out << b.head;
@@ -50,8 +44,6 @@ std::ostream& operator <<(std::ostream& out, const LBag<T>& b) {
 template<typename T>
 LBag<T>::~LBag() {
   while (head != nullptr) list_remove_head(head,tail);
-  // use cout below to have test program report when destructors are called
-  //std::cout << "destroyed object at " << this << std::endl;
 }
 
 // pre: b is an LBag and this bag doesn't exist
@@ -130,7 +122,6 @@ bool LBag<T>::erase_one(const T & target) {
 // post: all copies of target have been removed and count is returned
 template<typename T>
 size_t LBag<T>::erase(const T & target) {
-  // TODO: replace this with a linear time implementation (Q2)
   size_t count = 0;
   node<T> * prev = nullptr;
   node<T> * p = head;
@@ -156,7 +147,6 @@ size_t LBag<T>::erase(const T & target) {
   return count;
 }
 
-// TODO: define isSorted here (Q1)
 template<typename T>
 bool LBag<T>::isSorted() const{
   int prev=0;
