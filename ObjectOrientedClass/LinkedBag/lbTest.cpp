@@ -1,26 +1,22 @@
-// Sample test file for HW9 - don't submit this, but modify it as you test.
-// Some code is commented out so this compiles and runs with the starter files.
-// Sara Krehbiel, 3/5/20
-
 #include <iostream>
 #include "lbag.cpp" // linked list implementation
 #include "bag.cpp" // dynamic array implementation
 
 using namespace std;
 
-void q1test();
-void q2test();
-void q3test();
+void test1();
+void test2();
+void test3();
 
 int main() {
-  q1test();
-  q2test();
-  q3test();
+  test1();
+  test2();
+  test3();
   return 0;
 }
 
-void q1test() {
-  cout << "\nQ1 test:\n";
+void test1() {
+  cout << "\ntest 1:\n";
   LBag<int> b;
   for (int i=0; i<5; i++) {
     b.insert(i);
@@ -33,8 +29,8 @@ void q1test() {
   cout << "(" << b << ") " << (b.isSorted()?"is":"is not") << " sorted\n";
 }
 
-void q2test() {
-  cout << "\nQ2 test:\n";
+void test2() {
+  cout << "\ntest 2:\n";
   LBag<int> b;
   for (int i=0; i<1000; i++) {
     b.insert(4);
@@ -48,8 +44,8 @@ void q2test() {
 }
 
 
-void q3test() {
-  cout << "\nQ3 test:\n";
+void test3() {
+  cout << "\ntest 3:\n";
   Bag<int> b;
   for (int i=0; i<5; i++) {
     b.insert(i);
