@@ -1,9 +1,3 @@
-// Starter file for HW9 Q3:
-// Add begin and end member functions to the Bag class, and define A_iterator
-// to work as an iterator for any array-based container-style class.
-
-// Ezra Jaffe
-
 #ifndef BAG_H
 #define BAG_H
 
@@ -180,4 +174,4 @@ void Bag<T>::operator =(const Bag<T> &b) {
 
 
 
-#endif // BAG_H
+#endif
