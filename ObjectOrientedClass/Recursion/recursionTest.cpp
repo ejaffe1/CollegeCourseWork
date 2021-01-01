@@ -4,12 +4,12 @@
 using namespace std;
 
 int main() {
-  cout << "Q1 test:\n";
+  cout << "Sequence Function Test:\n";
   for (int i=0; i<10; i++) {
     cout << "a_" << i << "=" << sequence(i) << endl;
   }
 
-  cout << "\nQ3 test:\n";
+  cout << "\n Reverse Function Test:\n";
   int a1[7] = {1,2,3,4,5,6,7};
   reverse(a1,0,6);
   for (int i=0; i<7; cout << a1[i++] << " ") {}
@@ -19,7 +19,7 @@ int main() {
   reverse(a2,0,3);
   for (int i=0; i<4; cout << a2[i++] << " ") {}
   cout << endl;
-  cout << "\nQ2 and Q4 tests:\n";
+  cout << "\n List_Clear and List_Reverse Functions Test:\n";
   node *head=nullptr, *tail=nullptr;
   head = tail = new node(3,head);
   head = new node(4,head);
