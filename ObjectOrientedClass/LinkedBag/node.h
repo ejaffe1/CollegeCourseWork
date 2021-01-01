@@ -1,5 +1,3 @@
-// interface and implementation file for HW9 -- don't modify or submit
-
 #ifndef NODE_H
 #define NODE_H
 #include <iostream>
@@ -87,4 +85,4 @@ void list_remove_tail(node<T>*& head, node<T>*& tail) {
 }
 
 
-#endif // NODE_H
+#endif
